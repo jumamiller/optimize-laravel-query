@@ -49,6 +49,9 @@
             "providers": [
                 "Jumamiller\\LaravelQueryOptimizer\\LaravelQueryOptimizerServiceProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-main": "1.0.0"
         }
     },
     "scripts": {
