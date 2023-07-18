@@ -1,0 +1,60 @@
+{
+    "name": "jumamiller/optimize-laravel-query",
+    "description": "An AI powered optimizer for laravel eloquent and query builder",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "database",
+        "performace",
+        "optimization",
+        "openai"
+    ],
+    "homepage": "https://github.com/jumamiller/optimize-laravel-query",
+    "autoload": {
+        "psr-4": {
+            "Jumamiller\\LaravelQueryOptimizer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jumamiller\\LaravelQueryOptimizer\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Miller Juma",
+            "email": "jumamiller@yahoo.com"
+        }
+    ],
+    "require-dev": {
+        "laravel/pint": "^1.7",
+        "nunomaduro/collision": "^6.1",
+        "orchestra/testbench": "^7.22",
+        "pestphp/pest": "^1.22",
+        "phpunit/phpunit": "^9.6",
+        "roave/security-advisories": "dev-latest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "openai-php/laravel": "^0.4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jumamiller\\LaravelQueryOptimizer\\LaravelQueryOptimizerServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "style": "vendor/bin/pint",
+        "test": "vendor/bin/pest"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
